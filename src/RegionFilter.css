@@ -1,5 +1,3 @@
-/* RegionFilter.css */
-
 .region-filter {
   margin-bottom: 20px;
   display: flex;
@@ -30,7 +28,6 @@ option {
   font-size: 16px;
 }
 
-/* Přidejte efekty při najetí myší pro interaktivitu */
 select:hover {
   border-color: #666;
 }
@@ -40,7 +37,6 @@ select:disabled {
   cursor: not-allowed;
 }
 
-/* Přidejte animaci pro plynulý přechod */
 select,
 option {
   transition: all 0.3s ease;
