@@ -1,0 +1,13 @@
+.countries-container {
+    margin: 20px;
+  }
+  
+  .countries-heading {
+    text-align: center;
+  }
+  
+  .countries-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }

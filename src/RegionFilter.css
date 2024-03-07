@@ -1,0 +1,47 @@
+/* RegionFilter.css */
+
+.region-filter {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+label {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #333;
+}
+
+select {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.7);
+}
+
+option {
+  font-size: 16px;
+}
+
+/* Přidejte efekty při najetí myší pro interaktivitu */
+select:hover {
+  border-color: #666;
+}
+
+select:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Přidejte animaci pro plynulý přechod */
+select,
+option {
+  transition: all 0.3s ease;
+}
