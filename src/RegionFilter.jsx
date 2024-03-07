@@ -1,7 +1,7 @@
 import React from 'react';
 import './RegionFilter.css';
 
-const RegionFilter = ({ onRegionChange }) => {
+const RegionFilter = ({ onRegionChange, regionFilter }) => {
   const handleRegionChange = (e) => {
     const selectedRegion = e.target.value;
     onRegionChange(selectedRegion);
@@ -10,7 +10,7 @@ const RegionFilter = ({ onRegionChange }) => {
   return (
     <div className="region-filter">
       <label htmlFor="region">Filter by Region:</label>
-      <select id="region" onChange={handleRegionChange}>
+      <select id="region" onChange={handleRegionChange} value={regionFilter}>
         <option value="">All Regions</option>
         <option value="Africa">Africa</option>
         <option value="Americas">Americas</option>
