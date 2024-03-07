@@ -4,6 +4,8 @@
     padding: 10px;
     border-radius: 5px;
     text-align: center;
+    position: relative;
+    height: 20rem;
   }
   
   .country-flag {
@@ -16,5 +18,12 @@
   
   .country-heading {
     margin-bottom: 10px;
+  }
+  
+  .details-button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
   

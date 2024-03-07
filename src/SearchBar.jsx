@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
 import './SearchBar.css';
 
-const SearchBar = ({ onSearch }) => {
+
+
+const SearchBar = ({ onSearch, handleRegionChange }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate();
 
@@ -15,15 +16,23 @@ const SearchBar = ({ onSearch }) => {
     onSearch(searchTerm);
   };
 
+  const handleReset = () => {
+    setSearchTerm('')
+    handleRegionChange('');
+    onSearch('');
+  }
   return (
     <div className="search-bar">
       <input
-        type="text"
+        type="search"
         placeholder="Search for a country..."
         value={searchTerm}
         onChange={handleInputChange}
+        
       />
-      <button onClick={handleSearch}>Search</button>
+      <button onClick={handleSearch} >Search</button>
+      <button onClick={ handleReset}>Reset</button>
+      
     </div>
   );
 };

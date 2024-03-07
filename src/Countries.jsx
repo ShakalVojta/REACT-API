@@ -58,7 +58,7 @@ const Countries = () => {
   return (
     <div className="countries-container">
       <h1 className="countries-heading">All countries</h1>
-      <SearchBar onSearch={handleSearch} />
+      <SearchBar onSearch={handleSearch} handleRegionChange={handleRegionChange}/>
       <RegionFilter onRegionChange={handleRegionChange} />
       <div className="countries-list">
         {filteredByRegion.map((country) => (
